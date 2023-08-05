@@ -328,3 +328,56 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     left: 20px;
 
 }
+.latest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.latest h3{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+.latest h1{
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; 
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide the container into two equal columns */
+    gap: 10px; /* Set the gap between items */
+  }
+  
+  .left-images {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Divide the left container into two equal rows */
+    gap: 10px; /* Set the gap between images */
+  }
+  
+  .left-images img {
+    width: 100%; /* Set the width of left images to fill the available space */
+    height: 100%; /* Set the height of left images to fill the available space */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire area */
+  }
+  
+  .right-image img {
+    width: 100%; /* Set the width of the right image to fill the available space */
+    height: 100%; /* Set the height of the right image to fill the available space */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire area */
+  }
+  
+
+  .image-container:hover{
+    transform: scale(2);
+  }
