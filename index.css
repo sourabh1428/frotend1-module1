@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Gothic+A1&family=Poppins&family=Rubik&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz@9..40&family=Gothic+A1&family=Poppins&family=Rubik&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz@9..40&family=Gothic+A1&family=Poppins&family=Rubik&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz@9..40&family=Gothic+A1&family=Poppins&family=Roboto&family=Rubik&display=swap');
 
 
 
@@ -95,7 +95,7 @@ line-height: normal;
     justify-content: center;
     position: relative;
     top: 100px;
-  
+    flex-wrap: wrap;
 }
 
 .herocont1{
@@ -107,11 +107,12 @@ line-height: normal;
     border-radius: 20px;
 background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .hcl{
     position: relative;
     top:100px ;
-  
+    flex-wrap: wrap;
     height: 400px;
     display: flex;
     padding: 20px;
@@ -122,8 +123,12 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
 }
 .hcl1{
     display: flex;
-
+        width: 477px;
+    height: 209px;
+    flex-shrink: 0;
     flex-direction: column;
+    justify-content: space-between;
+
 }
 .hcl2{
     position: relative;
@@ -137,7 +142,7 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
 
 .hcl h4{
     color: #000;
-    font-family: Poppins;
+    font-family:Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -155,7 +160,7 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
 }
 .hcl h2{
     color: #000;
-    font-family: Mada;
+    font-family: Roboto;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -181,16 +186,74 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
 .hcr{
     display: flex;
     height: 600px;
-  
+    flex-wrap: wrap;
     justify-content: center;
 }
 .hcrfr{
     display: flex;
     position: absolute;
     z-index: 2;
+    right: 100px;
 }
 .hcrbg{
     position: relative;
     display:flex;
     z-index: 1;
+}
+
+.collections{
+    top: 100px;
+    position: relative;
+    height: 1000px;
+    width: 1515px;
+    display: flex;
+    border: 2px solid red;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.colc1{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+.colc2{
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 104.167% */
+}
+.colc3{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.colc3 button{
+    color: #4F5665;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; /* 156.25% */
+    width: 130px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+
+}
+.colc3 button:hover{
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+
+    color: white;
 }
