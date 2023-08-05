@@ -11,6 +11,11 @@
     padding: 0px;
 
 }
+a{
+    text-decoration: none;
+    color: #4F5665;;
+}
+
 
 .header1{
     display: flex;
@@ -69,6 +74,7 @@ line-height: normal;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 0px 0px 2px 0px;
     padding: 20px;
     color: #4F5665;
     font-family: Rubik;
@@ -77,6 +83,16 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
 }
+.navmid li:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    
+    background-color: #ffeaea;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+
 .navright{
     display: flex;
     width: 150px;
@@ -266,7 +282,7 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
 }
 .colc3 button:hover{
     background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
-
+    
     color: white;
 }
 .colc4{
@@ -289,6 +305,9 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     border-radius: 25px;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.05);
     
+}
+.cardcolc a{
+    width:50px;
 }
 
 .cardcolcleft{
@@ -333,6 +352,9 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    top: 100px;
+
 
 
 }
@@ -352,8 +374,9 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     font-weight: 500;
     line-height: 25px; 
 }
-
 .image-container {
+    position: relative;
+    top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Divide the container into two equal columns */
     gap: 10px; /* Set the gap between items */
@@ -365,19 +388,237 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     gap: 10px; /* Set the gap between images */
   }
   
-  .left-images img {
-    width: 100%; /* Set the width of left images to fill the available space */
-    height: 100%; /* Set the height of left images to fill the available space */
-    object-fit: cover; /* Preserve aspect ratio and cover the entire area */
+  .image-with-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   
-  .right-image img {
-    width: 100%; /* Set the width of the right image to fill the available space */
-    height: 100%; /* Set the height of the right image to fill the available space */
-    object-fit: cover; /* Preserve aspect ratio and cover the entire area */
+  .image-with-text img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 138.889% */
   }
   
 
-  .image-container:hover{
-    transform: scale(2);
+  .image-container img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+.latestcat{
+    display: flex;
+    position: relative;
+    left: 15px;
+    padding: 50px;
+    top: 400px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 1500px;
+    height: 1000px;
+   
+}
+
+.latestcat h8{
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.upcat{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    justify-content: space-between;
+}   
+.downcat{   
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lcp{
+    color: #909090;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
   }
+  
+  .title-rating-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    border-radius: 25px;
+    background-color: #F0F0F0;
+    border: 0.5px solid rgba(144, 144, 144, 0.25);
+    background: #F0F0F0;
+    box-shadow: #909090;
+  }
+
+
+  .footerpage{
+    position: relative;
+    top: 400px;
+    left: 50px;
+   
+    background: rgba(252, 203, 144, 0.15);
+    width: 1440px;
+    height: 483px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .fcon1{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+    height: 300px;
+    width: 40%;
+
+}
+.fcon11{
+    display: flex;
+    align-items: center;
+
+
+
+}
+.fcon11 h2{
+    position: relative;
+    left: 10px;
+
+    color: #FF5E3A;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.fcon12{
+    display: flex;
+    width: 254px;
+    height: 62.79px;
+    flex-shrink: 0;
+    color: #4F5665;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+.fcon13{
+    width: 194.6px;
+    height: 70.421px;
+    flex-shrink: 0;
+    display: flex;
+
+
+}
+.fcon14{
+    display: flex;
+    width: 151px;
+    height: 62.79px;
+    flex-shrink: 0;
+    color: #FF5E3A;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.footerpage ul{
+    list-style: none;
+}
+.footerpage h2{
+    color: #0B132A;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px; /* 166.667% */
+    }
+
+
+.footerpage li{
+    color: #4F5665;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.fcon2{
+  
+    height: 400px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.fcon3{
+    display: flex;
+    flex-direction: column;
+}
+.fcon4{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.cardcolcimg:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.latestcat img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+ 
+}
