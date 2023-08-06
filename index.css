@@ -548,50 +548,45 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
   }
 
 
-  .footerpage{
+  /* General styles for the footer */
+.footerpage {
     position: relative;
     top: 400px;
-    left: 50px;
-   
     background: rgba(252, 203, 144, 0.15);
-    width: 1440px;
-    height: 483px;
+    width:100%; /* Adjust width to fit the screen */
+    height: auto;
     flex-shrink: 0;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Add flex-wrap to handle smaller screens */
     justify-content: space-around;
     align-items: center;
+}
 
-  }
-  .fcon1{
-    display:flex;
+.fcon1 {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  
     height: 300px;
     width: 40%;
-
 }
-.fcon11{
+
+.fcon11 {
     display: flex;
     align-items: center;
-
-
-
 }
-.fcon11 h2{
+
+.fcon11 h2 {
     position: relative;
     left: 10px;
-
     color: #FF5E3A;
     font-family: Rubik;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.fcon12{
+
+.fcon12 {
     display: flex;
     width: 254px;
     height: 62.79px;
@@ -599,19 +594,18 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     color: #4F5665;
     font-family: Rubik;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 187.5% */
 }
-.fcon13{
+
+.fcon13 {
     width: 194.6px;
     height: 70.421px;
     flex-shrink: 0;
     display: flex;
-
-
 }
-.fcon14{
+
+.fcon14 {
     display: flex;
     width: 151px;
     height: 62.79px;
@@ -619,53 +613,72 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     color: #FF5E3A;
     font-family: Rubik;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 187.5% */
 }
 
-.footerpage ul{
+.footerpage ul {
     list-style: none;
 }
-.footerpage h2{
+
+.footerpage h2 {
     color: #0B132A;
     font-family: Rubik;
     font-size: 18px;
-    font-style: normal;
     font-weight: 900;
     line-height: 30px; /* 166.667% */
-    }
+}
 
-
-.footerpage li{
+.footerpage li {
     color: #4F5665;
     font-family: Rubik;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 187.5% */
 }
 
-.fcon2{
-  
+.fcon2 {
     height: 400px;
-
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 }
-.fcon3{
+
+.fcon3 {
     display: flex;
     flex-direction: column;
 }
-.fcon4{
+
+.fcon4 {
     display: flex;
     flex-direction: column;
-
 }
 
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .footerpage {
+        flex-direction: column;
+        align-items: flex-start; /* Adjust alignment for smaller screens */
+    }
+
+    .fcon1 {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px; /* Add some spacing between sections */
+    }
+
+    .fcon2,
+    .fcon3,
+    .fcon4,
+    .fcon5 {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px; /* Add some spacing between sections */
+    }
+}
 
 
 .cardcolcimg:hover{
