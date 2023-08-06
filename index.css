@@ -19,6 +19,7 @@ a{
 
 .header1{
     display: flex;
+    
     align-items: center;
     justify-content: center;
 
@@ -31,7 +32,7 @@ a{
     flex-shrink: 0;
     position: relative;
     top: 30px;
-    
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,14 +43,16 @@ a{
     align-items: center;
     justify-content: space-between;
     width: 120px;
-    
+    flex-wrap: wrap;
 }
 
 .navleft img{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navleft p{
+    flex-wrap: wrap;
     display: flex;
     color: #FF5151;
 font-family: Rubik;
@@ -61,6 +64,7 @@ line-height: normal;
 
 .navmid{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -94,6 +98,7 @@ line-height: normal;
 
 
 .navright{
+    flex-wrap: wrap;
     display: flex;
     width: 150px;
     align-items: center;
@@ -279,7 +284,35 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.05);
     border: none;
 
+
 }
+
+.colc3 nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.colc3 ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.colc3 li{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.colc3 button{
+    color: white;
+}
+
 .colc3 button:hover{
     background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
     
@@ -354,9 +387,7 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     flex-direction: column;
     position: relative;
     top: 100px;
-
-
-
+    flex-wrap: wrap;
 }
 .latest h3{
     color: #000;
@@ -435,7 +466,7 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     flex-direction: column;
     width: 1500px;
     height: 1000px;
-   
+   flex-wrap: wrap;
 }
 
 .latestcat h8{
@@ -451,12 +482,13 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     display: flex;
     flex-direction: row;
     width: 100%;
-
+    flex-wrap: wrap;
     justify-content: space-between;
 }   
 .downcat{   
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -622,3 +654,11 @@ background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 
     transition: transform 0.2s ease;
  
 }
+
+@media (max-width: 768px) {
+    .navbar-nav-scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+  }
